@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('todos', function (Blueprint $table) {
             $table->id();
             $table->string('task');
-            $table->integer('categorylist');
+            $table->integer('category_id');
             $table->integer('is_completed')->default(0);
             $table->timestamps();
         });
